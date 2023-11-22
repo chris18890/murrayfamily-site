@@ -22,5 +22,5 @@ sudo cp -r murrayfamily-site/themurrayfamily/ /var/www/themurrayfamily-ssl; sudo
 ```
 nano murrayfamily-site/themurrayfamily-ssl.conf
 sudo cp murrayfamily-site/themurrayfamily-ssl.conf /etc/apache2/sites-available/themurrayfamily-ssl.conf; sudo a2ensite themurrayfamily-ssl; sudo service apache2 restart
-sudo certbot --apache -d themurrayfamily.me.uk -d www.themurrayfamily.me.uk --agree-tos --renew-by-default --no-redirect
+sudo certbot --apache -d themurrayfamily.me.uk -d www.themurrayfamily.me.uk -d mta-sts.themurrayfamily.me.uk --agree-tos --renew-by-default --no-redirect
 ```
